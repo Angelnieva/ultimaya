@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Taza Magica</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Cafetería Taza Magica</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#Taza Magica">Taza Magica</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<div class="container" id="inicio">
+    <div class="hero">
+        <img src="images/cafe.jpg" alt="Imagen de la cafetería">
+    </div>
+    <div class="content">
+        <section class="box" id="Taza Magica">
+            <h2>Taza Magica</h2>
+            <p>Bienvenidos a la Cafetería Taza Magica, un lugar acogedor donde puedes disfrutar de los mejores cafés y postres en un ambiente tranquilo y agradable. Nuestra misión es ofrecerte una experiencia única que combine el aroma de café recién molido, la calidez de un ambiente relajado y el sabor de nuestros postres caseros.
+                En la Cafetería Taza Mágica, cada taza de café es preparada con pasión y dedicación. Seleccionamos los granos de café más finos y los tostamos cuidadosamente para asegurarnos de que cada sorbo sea perfecto. Además, nuestros postres son elaborados diariamente por nuestros talentosos pasteleros utilizando ingredientes frescos y de alta calidad.</p>
+        </section>
+        <section class="box" id="menu">
+            <h2>Menú</h2>
+            <img src="images/menu.jpg.webp" alt="Imagen del menú">
+            <p>Nuestro menú incluye una variedad de cafés, tés y deliciosos postres caseros. ¡No te pierdas nuestro pastel de chocolate!</p>
+        </section>
+        <section class="box" id="variedad">
+            <h2>Variedad</h2>
+            <img src="images/cafe-y-medialuna.jpg" alt="Imagen de cafe-y-medialuna">
+            <p>Especialidad de la casa.</p>
+        </section>
+        <section class="box" id="contacto">
+            <h2>Contacto</h2>
+            <img src="images/contacto.jpg" alt="Imagen de contacto">
+            <p>Dirección: Calle 123, Ciudad Juan B. Alberdi<br>Teléfono: 3812023455<br>Email: <a href="mailto:contacto@cafeteriatazamagica.com">contacto@cafeteriatazamagica.com</a></p>
+        </section>
+    </div>
+
+    <!-- Añadir el botón y el elemento a animar dentro del contenedor -->
+    <div id="miElemento" style="width: 100px; height: 100px; background-color: rgb(225, 24, 20)margin: 20px auto; border-radius: 8px;"></div>
+    <button id="miBoton" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #4e342e; color: #ffe0b2; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Mover</button>
+</div>
+
+<footer>
+    <p>&copy; 2024 Cafetería Taza Magica. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+// Función para mostrar una alerta cuando se carga la página
+function showWelcomeAlert() {
+    alert("Página ingresada");
+}
+
+// Ejecutar la función cuando la página se haya cargado completamente
+window.onload = showWelcomeAlert;
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('miBoton').addEventListener('click', function() {
+        document.getElementById('miElemento').style.transition = 'all 2s';
+        document.getElementById('miElemento').style.transform = 'translateX(100px)';
+    });
+});
+</script>
+
+</body>
+</html>
